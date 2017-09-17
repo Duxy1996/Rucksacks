@@ -24,7 +24,7 @@ print("List of books: " + str(list_of_books))
 first = list_of_books[0]
 
 for book in list_of_books:
-    temperol_book = (book[0],book[1],book[1]/book[0])
+    temperol_book = (book[0],book[1],book[1]/(rucksack_size - book[0] + 1))
     list_of_books_in_order.append(temperol_book)
 
 print(str(kilogrms_of_books)+' kgms of books')
